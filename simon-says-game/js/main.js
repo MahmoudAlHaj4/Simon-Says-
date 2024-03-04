@@ -22,3 +22,14 @@ btn.addEventListener("click", function () {
         }, index * 1000);
     });
 });
+
+
+function generatePattern(){
+    return Math.floor(Math.random() * colors.length)
+}
+function playSound(color) {
+    const sound = new Audio(`sounds/${color}.mp3`);
+    const source = audioContext.createMediaElementSource(sound);
+    source.connect(audioContext.destination);
+    sound.play();
+}
