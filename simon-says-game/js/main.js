@@ -33,3 +33,5 @@ function playSound(color) {
     source.connect(audioContext.destination);
     sound.play();
 }
+
+// Faced a problem with vs and git hub 
